@@ -1,0 +1,26 @@
+{
+  "name": "way2connect",
+  "version": "1.0.0",
+  "description": "A web based social media network application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasanthanp/way2connect.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasanthanp/way2connect/issues"
+  },
+  "homepage": "https://github.com/vasanthanp/way2connect#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
