@@ -1,10 +1,10 @@
-
-function App() {
+import React from 'react'
+import Login from "./components/Login";
+export default function App() {
   return (
-    <div className="App">
-     <h1>Welcome to  way2Connect</h1>
+    <div>
+      <Login/>
+      <h1 className="text-center">WAY 2 CONNECT</h1>
     </div>
-  );
+  )
 }
-
-export default App;
