@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const {DBCONNECTION}  = require('./config/DB_Config')
 const PORT = process.env.PORT || 5000;
 //CONFIGURING EXPRESS APP 
-app.use(bodyParser.json());
+
 app.use(express.json());
 //CONNECTING DATABASE
 DBCONNECTION.connect(err => {
