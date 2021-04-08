@@ -1,25 +1,12 @@
 import React from 'react'
-import Login from "./components/Login";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect
-} from "react-router-dom";
-import SignUp from './components/SignUp';
+import { BrowserRouter } from 'react-router-dom';
+import routes from './routes';
+import helperService from './service/helperService';
 export default function App() {
   return (
-    <div>
-      <Router>
-      <Switch>
-      <Redirect exact from="/" to="/login"/>
-       <Route path="/login"><Login/></Route>
-       <Route path="/signup"> <SignUp/></Route>
-      </Switch> 
-      
-      </Router>
-     
-    </div>
+    <BrowserRouter>
+      {helperService.checkLogin()}
+      {routes}
+    </BrowserRouter>
   )
 }

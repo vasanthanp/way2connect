@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import loginImage from "../images/t.svg";
+import loginImage from "../../../assets/images/t.svg";
 import { Link } from "react-router-dom";
-import "./css/Login.css";
+import "../Auth.css";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const loginData = (e) => {
     e.preventDefault();
-    console.log("email id : " ,email," password :",password);
+    console.log("email id : ", email, " password :", password);
   };
 
   return (
@@ -50,7 +50,7 @@ export default function Login() {
                 id="pwd"
                 placeholder="Enter password"
                 name="pswd"
-                onChange ={(e) => setPassword(e.target.value)}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
 

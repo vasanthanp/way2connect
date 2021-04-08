@@ -1,19 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import loginImage from "../images/t.svg";
+import loginImage from "../../../assets/images/t.svg";
 
 export default function SignUp() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confrimPassword, setConfirmPassword] = useState("");
- const signupData = (e) => {
-e.preventDefault();
-console.log(username,email,password,confrimPassword)
- }
-
-
-
+  const signupData = (e) => {
+    e.preventDefault();
+    console.log(username, email, password, confrimPassword);
+  };
 
   return (
     <div>
@@ -34,7 +31,9 @@ console.log(username,email,password,confrimPassword)
             </h1>
             <form action="" class="mt-5">
               <div class="form-group">
-                <label class="font-weight-bolder font-weight-bolder">Username: </label>
+                <label class="font-weight-bolder font-weight-bolder">
+                  Username:{" "}
+                </label>
                 <input
                   type="text"
                   class="form-control"
@@ -45,29 +44,35 @@ console.log(username,email,password,confrimPassword)
                 />
               </div>
               <div class="form-group">
-                <label class="font-weight-bolder font-weight-bolder">Email : </label>
+                <label class="font-weight-bolder font-weight-bolder">
+                  Email :{" "}
+                </label>
                 <input
                   type="email"
                   class="form-control"
                   id="email"
                   placeholder="Enter the mail id"
                   name="email"
-                  onChange={(e) => setEmail(e.target.value) }
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div class="form-group">
-                <label class="font-weight-bolder font-weight-bolder">Password : </label>
+                <label class="font-weight-bolder font-weight-bolder">
+                  Password :{" "}
+                </label>
                 <input
                   type="password"
                   class="form-control"
                   id="email"
                   placeholder="Enter the password"
                   name="email"
-                  onChange = {(e) => setPassword(e.target.value)} 
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
               <div class="form-group">
-                <label class="font-weight-bolder font-weight-bolder">Confirm password : </label>
+                <label class="font-weight-bolder font-weight-bolder">
+                  Confirm password :{" "}
+                </label>
                 <input
                   type="password"
                   class="form-control"
@@ -78,7 +83,11 @@ console.log(username,email,password,confrimPassword)
                 />
               </div>
 
-              <button type="submit" class="btn btn-primary" onClick={signupData}>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                onClick={signupData}
+              >
                 Submit
               </button>
               <p class="m-2 font-weight-bolder">
